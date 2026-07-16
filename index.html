@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carol Freitas Beauty — Estética Avançada em Goiânia, GO</title>
-  <meta name="description" content="Estética avançada, beleza e bem-estar em Goiânia, GO. Cabelo, unhas, sobrancelha, micro labial e podologia com atendimento feito para quem mais importa: você.">
-  
+  <meta name="description"
+    content="Estética avançada, beleza e bem-estar em Goiânia, GO. Cabelo, unhas, sobrancelha, micro labial e podologia com atendimento feito para quem mais importa: você.">
+
   <!-- Preconnect and Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
   <style>
     /* DESIGN SYSTEM TOKENS */
     :root {
@@ -28,13 +32,13 @@
       --wine-rgb: 84, 34, 44;
       --text-dark: #241d16;
       --text-light: #f5ece2;
-      
+
       --font-serif: 'Cormorant Garamond', serif;
       --font-sans: 'Jost', sans-serif;
-      
+
       --transition-smooth: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
       --transition-fast: all 0.25s ease;
-      
+
       --shadow-premium: 0 20px 40px rgba(0, 0, 0, 0.08);
       --shadow-dark: 0 30px 60px rgba(0, 0, 0, 0.45);
       --border-light: rgba(201, 164, 99, 0.15);
@@ -42,17 +46,19 @@
     }
 
     /* GLOBAL RESET */
-    *, *::before, *::after {
+    *,
+    *::before,
+    *::after {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
-    
+
     html {
       scroll-behavior: smooth;
       font-size: 16px;
     }
-    
+
     body {
       font-family: var(--font-sans);
       background: var(--ivory);
@@ -63,7 +69,11 @@
     }
 
     /* TYPOGRAPHY */
-    h1, h2, h3, h4, .display-serif {
+    h1,
+    h2,
+    h3,
+    h4,
+    .display-serif {
       font-family: var(--font-serif);
       font-weight: 400;
       letter-spacing: 0.02em;
@@ -74,13 +84,16 @@
     ::-webkit-scrollbar {
       width: 8px;
     }
+
     ::-webkit-scrollbar-track {
       background: var(--espresso);
     }
+
     ::-webkit-scrollbar-thumb {
       background: var(--gold);
       border-radius: 4px;
     }
+
     ::-webkit-scrollbar-thumb:hover {
       background: var(--gold-light);
     }
@@ -109,7 +122,7 @@
       font-weight: 500;
       margin-bottom: 1rem;
     }
-    
+
     .eyebrow::before {
       content: "";
       width: 30px;
@@ -123,7 +136,7 @@
       margin-bottom: 1.5rem;
       color: var(--espresso);
     }
-    
+
     .section-title em {
       font-style: italic;
       font-weight: 300;
@@ -366,9 +379,17 @@
       transform-origin: left center;
     }
 
-    .burger span:nth-child(1) { top: 2px; }
-    .burger span:nth-child(2) { top: 11px; }
-    .burger span:nth-child(3) { top: 20px; }
+    .burger span:nth-child(1) {
+      top: 2px;
+    }
+
+    .burger span:nth-child(2) {
+      top: 11px;
+    }
+
+    .burger span:nth-child(3) {
+      top: 20px;
+    }
 
     .burger.open span:nth-child(1) {
       transform: rotate(45deg);
@@ -460,12 +481,10 @@
     .hero-overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(
-        180deg, 
-        rgba(18, 14, 10, 0.8) 0%, 
-        rgba(18, 14, 10, 0.6) 50%, 
-        rgba(18, 14, 10, 0.9) 100%
-      );
+      background: linear-gradient(180deg,
+          rgba(18, 14, 10, 0.8) 0%,
+          rgba(18, 14, 10, 0.6) 50%,
+          rgba(18, 14, 10, 0.9) 100%);
       z-index: 2;
     }
 
@@ -528,8 +547,15 @@
     }
 
     @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
     }
 
     .hero-card-title {
@@ -557,13 +583,25 @@
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
-    
-    .hero-swatch.gold { background: var(--gold); }
-    .hero-swatch.rose { background: var(--rose); }
-    .hero-swatch.wine { background: var(--wine); }
-    .hero-swatch.ivory { background: var(--ivory); border: 1px solid var(--gold); }
+
+    .hero-swatch.gold {
+      background: var(--gold);
+    }
+
+    .hero-swatch.rose {
+      background: var(--rose);
+    }
+
+    .hero-swatch.wine {
+      background: var(--wine);
+    }
+
+    .hero-swatch.ivory {
+      background: var(--ivory);
+      border: 1px solid var(--gold);
+    }
 
     /* SECTION BASICS */
     section {
@@ -706,9 +744,18 @@
       border-radius: 50%;
       display: inline-block;
     }
-    .pillar-dot.gold { background: var(--gold); }
-    .pillar-dot.rose { background: var(--rose); }
-    .pillar-dot.wine { background: var(--wine); }
+
+    .pillar-dot.gold {
+      background: var(--gold);
+    }
+
+    .pillar-dot.rose {
+      background: var(--rose);
+    }
+
+    .pillar-dot.wine {
+      background: var(--wine);
+    }
 
     /* SPECIAL FEATURE & VIDEO ACCENT ("Destaque Procedimentos") */
     .highlights-section {
@@ -797,8 +844,17 @@
     }
 
     @keyframes pulse {
-      0%, 100% { opacity: 0.4; transform: scale(1); }
-      50% { opacity: 1; transform: scale(1.4); }
+
+      0%,
+      100% {
+        opacity: 0.4;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 1;
+        transform: scale(1.4);
+      }
     }
 
     /* SERVICES GRID SECTION ("SERVIÇOS") */
@@ -811,7 +867,7 @@
     .services-header .eyebrow {
       justify-content: center;
     }
-    
+
     .services-header .eyebrow::before {
       display: none;
     }
@@ -948,7 +1004,7 @@
       font-size: clamp(2rem, 4vw, 3rem);
       margin-bottom: 1.5rem;
     }
-    
+
     .vip-title em {
       color: var(--gold-light);
       font-style: italic;
@@ -1204,7 +1260,8 @@
       transition: var(--transition-smooth);
     }
 
-    .faq-icon::before, .faq-icon::after {
+    .faq-icon::before,
+    .faq-icon::after {
       content: "";
       position: absolute;
       background: var(--gold-dark);
@@ -1213,10 +1270,17 @@
 
     /* Plus vertical and horizontal lines */
     .faq-icon::before {
-      top: 0; left: 8px; width: 2px; height: 100%;
+      top: 0;
+      left: 8px;
+      width: 2px;
+      height: 100%;
     }
+
     .faq-icon::after {
-      top: 8px; left: 0; width: 100%; height: 2px;
+      top: 8px;
+      left: 0;
+      width: 100%;
+      height: 2px;
     }
 
     .faq-item.active .faq-icon {
@@ -1244,12 +1308,10 @@
 
     /* CTA BANNER SECTION */
     .cta-banner {
-      background: linear-gradient(
-        135deg, 
-        var(--espresso) 0%, 
-        var(--espresso-light) 50%, 
-        #2a2119 100%
-      );
+      background: linear-gradient(135deg,
+          var(--espresso) 0%,
+          var(--espresso-light) 50%,
+          #2a2119 100%);
       color: var(--text-light);
       text-align: center;
       padding: 9rem 0;
@@ -1325,14 +1387,15 @@
       gap: 0.6rem;
     }
 
-    .loc-item p, .loc-item a {
+    .loc-item p,
+    .loc-item a {
       font-size: 1rem;
       color: var(--text-dark);
       text-decoration: none;
       opacity: 0.9;
       line-height: 1.6;
     }
-    
+
     .loc-item a:hover {
       color: var(--gold-dark);
     }
@@ -1469,9 +1532,17 @@
     }
 
     @keyframes pulse-ring {
-      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
-      70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
-      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+      0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+      }
+
+      70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+      }
     }
 
     .wa-float:hover {
@@ -1510,18 +1581,27 @@
       transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
-    .reveal.active, .reveal-left.active, .reveal-right.active, .reveal-scale.active {
+    .reveal.active,
+    .reveal-left.active,
+    .reveal-right.active,
+    .reveal-scale.active {
       opacity: 1;
       transform: translate(0) scale(1);
     }
 
     /* MEDIA QUERIES FOR RESPONSIVENESS */
     @media (max-width: 1024px) {
-      .hero-grid, .about-grid, .highlights-grid, .vip-grid, .faq-grid, .loc-grid {
+
+      .hero-grid,
+      .about-grid,
+      .highlights-grid,
+      .vip-grid,
+      .faq-grid,
+      .loc-grid {
         grid-template-columns: 1fr;
         gap: 3.5rem;
       }
-      
+
       .hero {
         height: auto;
         padding: 9rem 0 6rem;
@@ -1542,7 +1622,7 @@
       .about-visual {
         order: -1;
       }
-      
+
       .about-img-frame {
         width: 65%;
       }
@@ -1561,7 +1641,9 @@
     }
 
     @media (max-width: 768px) {
-      .nav-links, .nav-actions .nav-cta-btn {
+
+      .nav-links,
+      .nav-actions .nav-cta-btn {
         display: none;
       }
 
@@ -1574,7 +1656,8 @@
         gap: 1.5rem;
       }
 
-      .media-showcase-container, .vip-gallery {
+      .media-showcase-container,
+      .vip-gallery {
         grid-template-columns: 1fr;
         max-width: 400px;
         margin: 0 auto;
@@ -1621,17 +1704,23 @@
       html {
         scroll-behavior: auto;
       }
-      .reveal, .reveal-left, .reveal-right, .reveal-scale {
+
+      .reveal,
+      .reveal-left,
+      .reveal-right,
+      .reveal-scale {
         opacity: 1 !important;
         transform: none !important;
         transition: none !important;
       }
+
       .hero-card {
         animation: none !important;
       }
     }
   </style>
 </head>
+
 <body>
 
   <!-- STICKY GLASSMORPHIC HEADER -->
@@ -1645,7 +1734,7 @@
             <span class="brand-subtitle">Beauty Studio</span>
           </div>
         </a>
-        
+
         <ul class="nav-links">
           <li><a href="#hero">Início</a></li>
           <li><a href="#sobre">Sobre</a></li>
@@ -1654,9 +1743,11 @@
           <li><a href="#depoimentos">Depoimentos</a></li>
           <li><a href="#localizacao">Onde Estamos</a></li>
         </ul>
-        
+
         <div class="nav-actions">
-          <a class="nav-cta-btn" href="https://wa.me/5562994188279?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20no%20Studio%20Carol%20Freitas%20Beauty." target="_blank" rel="noopener">Agendar Horário</a>
+          <a class="nav-cta-btn"
+            href="https://wa.me/5562994188279?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20no%20Studio%20Carol%20Freitas%20Beauty."
+            target="_blank" rel="noopener">Agendar Horário</a>
           <button class="burger" id="burgerToggle" aria-label="Abrir Menu">
             <span></span>
             <span></span>
@@ -1677,7 +1768,9 @@
       <li><a href="#depoimentos" onclick="toggleMobileMenu()">Depoimentos</a></li>
       <li><a href="#localizacao" onclick="toggleMobileMenu()">Onde Estamos</a></li>
     </ul>
-    <a class="btn btn-primary" href="https://wa.me/5562994188279?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20no%20Studio%20Carol%20Freitas%20Beauty." target="_blank" rel="noopener" onclick="toggleMobileMenu()">Agendar pelo WhatsApp</a>
+    <a class="btn btn-primary"
+      href="https://wa.me/5562994188279?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20no%20Studio%20Carol%20Freitas%20Beauty."
+      target="_blank" rel="noopener" onclick="toggleMobileMenu()">Agendar pelo WhatsApp</a>
   </div>
 
   <!-- HERO SECTION WITH VIDEO BACKGROUND -->
@@ -1690,13 +1783,16 @@
       <div class="hero-grid">
         <div class="hero-content reveal-left">
           <h1 class="hero-title">Feito para quem mais importa: <em>você</em></h1>
-          <p class="hero-lead">Cabelo, unhas, sobrancelhas e podologia com técnica, carinho e um olhar atento a cada detalhe da sua beleza e bem-estar.</p>
+          <p class="hero-lead">Cabelo, unhas, sobrancelhas e podologia com técnica, carinho e um olhar atento a cada
+            detalhe da sua beleza e bem-estar.</p>
           <div class="hero-btn-row">
-            <a class="btn btn-primary" href="https://wa.me/5562994188279?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20no%20Studio%20Carol%20Freitas%20Beauty." target="_blank" rel="noopener">Agendar no WhatsApp</a>
+            <a class="btn btn-primary"
+              href="https://wa.me/5562994188279?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20no%20Studio%20Carol%20Freitas%20Beauty."
+              target="_blank" rel="noopener">Agendar no WhatsApp</a>
             <a class="btn btn-outline" href="#servicos">Ver Nossos Serviços</a>
           </div>
         </div>
-        
+
         <div class="hero-card-container reveal-right">
           <div class="hero-card">
             <div class="hero-swatches">
@@ -1706,8 +1802,10 @@
               <span class="hero-swatch ivory"></span>
             </div>
             <h3 class="hero-card-title">Cuidado Exclusivo</h3>
-            <p class="hero-card-desc">Formatos anatômicos, tratamentos capilares profundos e saúde garantidos por um diagnóstico personalizado.</p>
-            <a class="btn btn-outline" style="border-color: var(--gold); color: var(--gold-light);" href="#sobre">Descubra o Studio</a>
+            <p class="hero-card-desc">Formatos anatômicos, tratamentos capilares profundos e saúde garantidos por um
+              diagnóstico personalizado.</p>
+            <a class="btn btn-outline" style="border-color: var(--gold); color: var(--gold-light);"
+              href="#sobre">Descubra o Studio</a>
           </div>
         </div>
       </div>
@@ -1720,18 +1818,23 @@
       <div class="about-grid">
         <div class="about-visual reveal-left">
           <div class="about-img-frame">
-            <img src="Imagens/Dona%20da%20marca%20Carol%20Freitas.png" alt="Carol Freitas Portrait" class="about-portrait">
+            <img src="Imagens/Dona%20da%20marca%20Carol%20Freitas.png" alt="Carol Freitas Portrait"
+              class="about-portrait">
           </div>
         </div>
-        
+
         <div class="about-content reveal-right">
           <h2 class="section-title">Estética pensada em <em>cada detalhe seu</em></h2>
           <div class="about-body">
-            <p>O <strong>Studio Carol Freitas Beauty</strong> nasceu com a missão de oferecer serviços de estética avançada, beleza e bem-estar em um ambiente acolhedor, sofisticado e de excelência.</p>
-            <p>Localizado no Jardim América, em Goiânia, o studio reúne uma equipe altamente especializada que entende a individualidade de cada cliente. Não acreditamos em fórmulas prontas; cada cabelo, unha ou sobrancelha é tratado como uma assinatura de identidade.</p>
-            <p>Cuidar da sua autoestima com segurança, materiais esterilizados de altíssima qualidade e técnica primorosa é o que nos move todos os dias.</p>
+            <p>O <strong>Studio Carol Freitas Beauty</strong> nasceu com a missão de oferecer serviços de estética
+              avançada, beleza e bem-estar em um ambiente acolhedor, sofisticado e de excelência.</p>
+            <p>Localizado no Jardim América, em Goiânia, o studio reúne uma equipe altamente especializada que entende a
+              individualidade de cada cliente. Não acreditamos em fórmulas prontas; cada cabelo, unha ou sobrancelha é
+              tratado como uma assinatura de identidade.</p>
+            <p>Cuidar da sua autoestima com segurança, materiais esterilizados de altíssima qualidade e técnica
+              primorosa é o que nos move todos os dias.</p>
           </div>
-          
+
           <div class="pillars-list">
             <span class="pillar-tag"><i class="pillar-dot gold"></i> Jardim América, Goiânia</span>
             <span class="pillar-tag"><i class="pillar-dot rose"></i> Atendimento Individualizado</span>
@@ -1749,13 +1852,16 @@
         <div class="reveal-left">
           <h2 class="section-title">Onde a ciência da estética encontra a <em>arte do cuidado</em></h2>
           <p class="lead-text" style="color: var(--text-dark); opacity: 0.85;">
-            Trabalhamos com equipamentos de ponta e técnicas avançadas para garantir resultados impecáveis e de longa duração. Passe o mouse ou toque nos cartões ao lado para assistir aos nossos procedimentos em ação.
+            Trabalhamos com equipamentos de ponta e técnicas avançadas para garantir resultados impecáveis e de longa
+            duração. Passe o mouse ou toque nos cartões ao lado para assistir aos nossos procedimentos em ação.
           </p>
           <div style="margin-top: 2rem;">
-            <a class="btn btn-dark" href="https://wa.me/5562994188279?text=Ol%C3%A1%2C%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20os%20procedimentos." target="_blank" rel="noopener">Conversar com Especialista</a>
+            <a class="btn btn-dark"
+              href="https://wa.me/5562994188279?text=Ol%C3%A1%2C%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20os%20procedimentos."
+              target="_blank" rel="noopener">Conversar com Especialista</a>
           </div>
         </div>
-        
+
         <div class="media-showcase-container reveal-right">
           <!-- Nail Video Card -->
           <div class="video-card-wrapper" onmouseenter="playVideo(this)" onmouseleave="pauseVideo(this)">
@@ -1767,7 +1873,7 @@
               <p><span class="play-indicator-dot"></span> Ver técnica em vídeo</p>
             </div>
           </div>
-          
+
           <!-- Hair Video Card -->
           <div class="video-card-wrapper" onmouseenter="playVideo(this)" onmouseleave="pauseVideo(this)">
             <video loop muted playsinline class="procedure-video">
@@ -1787,89 +1893,135 @@
   <section id="servicos" class="section-light">
     <div class="container">
       <div class="services-header reveal">
-        <h2 class="section-title">Menu de Serviços <em>Exclusivos</em></h2>
-        <p style="opacity: 0.8; font-size: 1.1rem; max-width: 600px; margin: 0 auto;">Oferecemos protocolos completos de estética facial, corporal, capilar e podologia.</p>
+        <h2 class="section-title">Serviços <em>Exclusivos</em></h2>
+        <p style="opacity: 0.8; font-size: 1.1rem; max-width: 600px; margin: 0 auto;">Oferecemos protocolos completos de
+          estética facial, corporal, capilar e podologia.</p>
       </div>
-      
+
       <div class="services-grid">
         <!-- Service 1: Cabelos -->
         <div class="service-card reveal">
           <div class="service-icon-wrapper">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4c0 4 3 7 7 7s7-3 7-7M20 20c0-4-3-7-7-7s-7 3-7 7"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M4 4c0 4 3 7 7 7s7-3 7-7M20 20c0-4-3-7-7-7s-7 3-7 7" />
+            </svg>
           </div>
           <h3 class="service-card-title">Cabelos</h3>
-          <p class="service-card-desc">Cortes sob medida, coloração premium, mechas sofisticadas e tratamentos de alta performance para a saúde dos fios.</p>
-          <a class="service-card-link" href="https://wa.me/5562994188279?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20de%20Cabelo." target="_blank" rel="noopener">Consultar</a>
+          <p class="service-card-desc">Cortes sob medida, coloração premium, mechas sofisticadas e tratamentos de alta
+            performance para a saúde dos fios.</p>
+          <a class="service-card-link"
+            href="https://wa.me/5562994188279?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20de%20Cabelo."
+            target="_blank" rel="noopener">Consultar</a>
         </div>
 
         <!-- Service 2: Manicure & Pedicure -->
         <div class="service-card reveal">
           <div class="service-icon-wrapper">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+            </svg>
           </div>
           <h3 class="service-card-title">Manicure & Pedicure</h3>
-          <p class="service-card-desc">Cuidado clássico para mãos e pés com cutilagem anatômica, esmaltação nacional e importada de longa duração.</p>
-          <a class="service-card-link" href="https://wa.me/5562994188279?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20de%20Manicure%20e%20Pedicure." target="_blank" rel="noopener">Consultar</a>
+          <p class="service-card-desc">Cuidado clássico para mãos e pés com cutilagem anatômica, esmaltação nacional e
+            importada de longa duração.</p>
+          <a class="service-card-link"
+            href="https://wa.me/5562994188279?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20de%20Manicure%20e%20Pedicure."
+            target="_blank" rel="noopener">Consultar</a>
         </div>
 
         <!-- Service 3: Alongamento de Unhas -->
         <div class="service-card reveal">
           <div class="service-icon-wrapper">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M15 3v18M3 9h18M3 15h18"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <path d="M9 3v18M15 3v18M3 9h18M3 15h18" />
+            </svg>
           </div>
           <h3 class="service-card-title">Alongamento</h3>
-          <p class="service-card-desc">Alongamento em fibra de vidro ou gel com formatos elegantes e resistência máxima, respeitando a integridade das suas unhas naturais.</p>
-          <a class="service-card-link" href="https://wa.me/5562994188279?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20de%20Alongamento%20de%20Unhas." target="_blank" rel="noopener">Consultar</a>
+          <p class="service-card-desc">Alongamento em fibra de vidro ou gel com formatos elegantes e resistência máxima,
+            respeitando a integridade das suas unhas naturais.</p>
+          <a class="service-card-link"
+            href="https://wa.me/5562994188279?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20de%20Alongamento%20de%20Unhas."
+            target="_blank" rel="noopener">Consultar</a>
         </div>
 
         <!-- Service 4: Design de Sobrancelhas -->
         <div class="service-card reveal">
           <div class="service-icon-wrapper">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z" />
+              <circle cx="12" cy="12" r="3" />
+            </svg>
           </div>
           <h3 class="service-card-title">Sobrancelhas</h3>
-          <p class="service-card-desc">Design personalizado de acordo com visagismo facial, aplicação de henna ou tintura para harmonizar e valorizar seu olhar.</p>
-          <a class="service-card-link" href="https://wa.me/5562994188279?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20de%20Design%20de%20Sobrancelha." target="_blank" rel="noopener">Consultar</a>
+          <p class="service-card-desc">Design personalizado de acordo com visagismo facial, aplicação de henna ou
+            tintura para harmonizar e valorizar seu olhar.</p>
+          <a class="service-card-link"
+            href="https://wa.me/5562994188279?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20de%20Design%20de%20Sobrancelha."
+            target="_blank" rel="noopener">Consultar</a>
         </div>
 
         <!-- Service 5: Micropigmentação Labial -->
         <div class="service-card reveal">
           <div class="service-icon-wrapper">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"/><path d="M8 12h8"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path
+                d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z" />
+              <path d="M8 12h8" />
+            </svg>
           </div>
           <h3 class="service-card-title">Micro Labial</h3>
-          <p class="service-card-desc">Técnica avançada de micropigmentação para dar cor, contorno e aspecto saudável e natural aos lábios todos os dias.</p>
-          <a class="service-card-link" href="https://wa.me/5562994188279?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20de%20Micropigmenta%C3%A7%C3%A3o%20Labial." target="_blank" rel="noopener">Consultar</a>
+          <p class="service-card-desc">Técnica avançada de micropigmentação para dar cor, contorno e aspecto saudável e
+            natural aos lábios todos os dias.</p>
+          <a class="service-card-link"
+            href="https://wa.me/5562994188279?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20de%20Micropigmenta%C3%A7%C3%A3o%20Labial."
+            target="_blank" rel="noopener">Consultar</a>
         </div>
 
         <!-- Service 6: Podologia -->
         <div class="service-card reveal">
           <div class="service-icon-wrapper">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
           </div>
           <h3 class="service-card-title">Podologia</h3>
-          <p class="service-card-desc">Cuidado técnico e clínico completo para a saúde, bem-estar e conforto dos seus pés, tratando unhas encravadas e calosidades.</p>
-          <a class="service-card-link" href="https://wa.me/5562994188279?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20de%20Podologia." target="_blank" rel="noopener">Consultar</a>
+          <p class="service-card-desc">Cuidado técnico e clínico completo para a saúde, bem-estar e conforto dos seus
+            pés, tratando unhas encravadas e calosidades.</p>
+          <a class="service-card-link"
+            href="https://wa.me/5562994188279?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20de%20Podologia."
+            target="_blank" rel="noopener">Consultar</a>
         </div>
 
         <!-- Service 7: Velaterapia -->
         <div class="service-card reveal">
           <div class="service-icon-wrapper">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8 6 8 8 12 11c4 3 4 5 0 9"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2C8 6 8 8 12 11c4 3 4 5 0 9" />
+            </svg>
           </div>
           <h3 class="service-card-title">Velaterapia</h3>
-          <p class="service-card-desc">Cauterização capilar feita através da chama da vela, eliminando pontas duplas sem alterar o comprimento dos fios.</p>
-          <a class="service-card-link" href="https://wa.me/5562994188279?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20tratamento%20de%20Velaterapia." target="_blank" rel="noopener">Consultar</a>
+          <p class="service-card-desc">Cauterização capilar feita através da chama da vela, eliminando pontas duplas sem
+            alterar o comprimento dos fios.</p>
+          <a class="service-card-link"
+            href="https://wa.me/5562994188279?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20tratamento%20de%20Velaterapia."
+            target="_blank" rel="noopener">Consultar</a>
         </div>
 
         <!-- Service 8: Protocolos de Estética -->
         <div class="service-card reveal">
           <div class="service-icon-wrapper">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+            </svg>
           </div>
           <h3 class="service-card-title">Estética Avançada</h3>
-          <p class="service-card-desc">Protocolos faciais e corporais personalizados de rejuvenescimento, hidratação profunda e revitalização cutânea.</p>
-          <a class="service-card-link" href="https://wa.me/5562994188279?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20Procedimentos%20Est%C3%A9ticos." target="_blank" rel="noopener">Consultar</a>
+          <p class="service-card-desc">Protocolos faciais e corporais personalizados de rejuvenescimento, hidratação
+            profunda e revitalização cutânea.</p>
+          <a class="service-card-link"
+            href="https://wa.me/5562994188279?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20Procedimentos%20Est%C3%A9ticos."
+            target="_blank" rel="noopener">Consultar</a>
         </div>
       </div>
     </div>
@@ -1882,28 +2034,34 @@
         <div class="vip-content reveal-left">
           <h2 class="vip-title">Confiança de quem exige o <em>melhor do mercado</em></h2>
           <p class="lead-text" style="color: var(--ivory-dark); opacity: 0.9;">
-            O Studio Carol Freitas Beauty é o ponto de encontro da estética avançada em Goiânia. Temos a honra de receber e cuidar de grandes nomes da música nacional, como a dupla <strong>Maiara & Maraisa</strong>.
+            O Studio Carol Freitas Beauty é o ponto de encontro da estética avançada em Goiânia. Temos a honra de
+            receber e cuidar de grandes nomes da música nacional, como a dupla <strong>Maiara & Maraisa</strong>.
           </p>
           <p class="lead-text" style="color: var(--ivory-dark); opacity: 0.8; font-size: 1rem; margin-bottom: 2.5rem;">
-            Aqui, cada cliente recebe um atendimento VIP, com privacidade, técnicas modernas e um ambiente inteiramente planejado para o seu conforto. Experimente o padrão de beleza das estrelas.
+            Aqui, cada cliente recebe um atendimento VIP, com privacidade, técnicas modernas e um ambiente inteiramente
+            planejado para o seu conforto. Experimente o padrão de beleza das estrelas.
           </p>
-          <a class="btn btn-primary" href="https://wa.me/5562994188279?text=Ol%C3%A1%2C%20quero%20agendar%20um%20atendimento%20VIP%20no%20Studio." target="_blank" rel="noopener">Viver a Experiência VIP</a>
+          <a class="btn btn-primary"
+            href="https://wa.me/5562994188279?text=Ol%C3%A1%2C%20quero%20agendar%20um%20atendimento%20VIP%20no%20Studio."
+            target="_blank" rel="noopener">Viver a Experiência VIP</a>
         </div>
-        
+
         <div class="vip-gallery reveal-right">
           <div class="vip-card">
             <div class="vip-img-box">
-              <img src="Imagens/Cliente%20vip%20Maiara%20e%20Maraisa.jpg" alt="Maiara e Maraisa no Studio Carol Freitas" class="vip-img">
+              <img src="Imagens/Cliente%20vip%20Maiara%20e%20Maraisa.jpg" alt="Maiara e Maraisa no Studio Carol Freitas"
+                class="vip-img">
             </div>
             <div class="vip-info">
               <h4 class="vip-name">Maiara & Maraisa</h4>
               <p class="vip-tag">Clientes VIP do Studio</p>
             </div>
           </div>
-          
+
           <div class="vip-card">
             <div class="vip-img-box">
-              <img src="Imagens/Cliente%20vip%20Maiara%20e%20Maraisa1.jpg" alt="Maiara e Maraisa cuidando da beleza" class="vip-img">
+              <img src="Imagens/Cliente%20vip%20Maiara%20e%20Maraisa1.jpg" alt="Maiara e Maraisa cuidando da beleza"
+                class="vip-img">
             </div>
             <div class="vip-info">
               <h4 class="vip-name">Momentos Studio</h4>
@@ -1940,14 +2098,16 @@
     <div class="container">
       <div class="services-header reveal">
         <h2 class="section-title">O que dizem nossas <em>clientes de Goiânia</em></h2>
-        <p style="opacity: 0.8; font-size: 1.1rem; max-width: 600px; margin: 0 auto;">A satisfação em cada detalhe é a nossa maior recompensa.</p>
+        <p style="opacity: 0.8; font-size: 1.1rem; max-width: 600px; margin: 0 auto;">A satisfação em cada detalhe é a
+          nossa maior recompensa.</p>
       </div>
-      
+
       <div class="testi-grid">
         <!-- Review 1 -->
         <div class="testi-card reveal">
           <div class="testi-stars">★★★★★</div>
-          <p class="testi-quote">O melhor alongamento de fibra de vidro de Goiânia! As meninas são super cuidadosas e o acabamento fica super natural e fino. Não troco por nada.</p>
+          <p class="testi-quote">O melhor alongamento de fibra de vidro de Goiânia! As meninas são super cuidadosas e o
+            acabamento fica super natural e fino. Não troco por nada.</p>
           <div class="testi-author">
             <div class="testi-avatar">AM</div>
             <div class="testi-author-info">
@@ -1960,7 +2120,8 @@
         <!-- Review 2 -->
         <div class="testi-card reveal">
           <div class="testi-stars">★★★★★</div>
-          <p class="testi-quote">Espaço maravilhoso, chique e aconchegante. Fiz mechas e tratamento e meu cabelo nunca teve tanto brilho. Equipe nota mil, super atenciosa!</p>
+          <p class="testi-quote">Espaço maravilhoso, chique e aconchegante. Fiz mechas e tratamento e meu cabelo nunca
+            teve tanto brilho. Equipe nota mil, super atenciosa!</p>
           <div class="testi-author">
             <div class="testi-avatar">GC</div>
             <div class="testi-author-info">
@@ -1973,7 +2134,8 @@
         <!-- Review 3 -->
         <div class="testi-card reveal">
           <div class="testi-stars">★★★★★</div>
-          <p class="testi-quote">Tive um atendimento incrível de podologia. Estava sentindo muita dor por conta de uma unha encravada e saí de lá renovada. Muito técnica e higienizada.</p>
+          <p class="testi-quote">Tive um atendimento incrível de podologia. Estava sentindo muita dor por conta de uma
+            unha encravada e saí de lá renovada. Muito técnica e higienizada.</p>
           <div class="testi-author">
             <div class="testi-avatar">LS</div>
             <div class="testi-author-info">
@@ -1992,12 +2154,15 @@
       <div class="faq-grid">
         <div class="reveal-left">
           <h2 class="section-title">Perguntas <em>Frequentes</em></h2>
-          <p class="lead-text" style="font-size: 1rem; opacity: 0.85;">Se você tem alguma dúvida sobre nossos processos, agendamentos ou procedimentos, encontre as respostas rápidas aqui.</p>
+          <p class="lead-text" style="font-size: 1rem; opacity: 0.85;">Se você tem alguma dúvida sobre nossos processos,
+            agendamentos ou procedimentos, encontre as respostas rápidas aqui.</p>
           <div style="margin-top: 1.5rem;">
-            <a class="btn btn-outline" style="color: var(--espresso); border-color: var(--gold-dark);" href="https://wa.me/5562994188279?text=Ol%C3%A1%2C%20tenho%20uma%20d%C3%BAvida." target="_blank" rel="noopener">Perguntar no WhatsApp</a>
+            <a class="btn btn-outline" style="color: var(--espresso); border-color: var(--gold-dark);"
+              href="https://wa.me/5562994188279?text=Ol%C3%A1%2C%20tenho%20uma%20d%C3%BAvida." target="_blank"
+              rel="noopener">Perguntar no WhatsApp</a>
           </div>
         </div>
-        
+
         <div class="faq-accordion reveal-right">
           <div class="faq-item">
             <button class="faq-trigger">
@@ -2006,7 +2171,9 @@
             </button>
             <div class="faq-content">
               <div class="faq-content-inner">
-                Trabalhamos exclusivamente com atendimento sob hora marcada para garantir que você tenha um momento exclusivo e sem pressa. Você pode agendar clicando em qualquer link deste site que te redirecionará para nosso WhatsApp.
+                Trabalhamos exclusivamente com atendimento sob hora marcada para garantir que você tenha um momento
+                exclusivo e sem pressa. Você pode agendar clicando em qualquer link deste site que te redirecionará para
+                nosso WhatsApp.
               </div>
             </div>
           </div>
@@ -2018,7 +2185,8 @@
             </button>
             <div class="faq-content">
               <div class="faq-content-inner">
-                Com o cuidado adequado e a manutenção em dia (feita idealmente a cada 20 a 25 dias no studio), o alongamento pode durar meses mantendo as unhas naturais totalmente saudáveis por baixo.
+                Com o cuidado adequado e a manutenção em dia (feita idealmente a cada 20 a 25 dias no studio), o
+                alongamento pode durar meses mantendo as unhas naturais totalmente saudáveis por baixo.
               </div>
             </div>
           </div>
@@ -2030,7 +2198,8 @@
             </button>
             <div class="faq-content">
               <div class="faq-content-inner">
-                Aceitamos pagamentos via PIX, cartões de débito e cartões de crédito (com possibilidade de parcelamento dependendo do valor total dos procedimentos).
+                Aceitamos pagamentos via PIX, cartões de débito e cartões de crédito (com possibilidade de parcelamento
+                dependendo do valor total dos procedimentos).
               </div>
             </div>
           </div>
@@ -2042,7 +2211,8 @@
             </button>
             <div class="faq-content">
               <div class="faq-content-inner">
-                Sim! Estamos estrategicamente localizados na Avenida C-4 no Jardim América, um local central de Goiânia, com estacionamento facilitado em frente e ótima segurança.
+                Sim! Estamos estrategicamente localizados na Avenida C-4 no Jardim América, um local central de Goiânia,
+                com estacionamento facilitado em frente e ótima segurança.
               </div>
             </div>
           </div>
@@ -2062,8 +2232,11 @@
   <section class="cta-banner">
     <div class="container reveal-scale">
       <h2>Pronta para viver essa experiência?</h2>
-      <p>Reserve o seu horário de cuidados especiais. Nosso espaço e nossa equipe estão prontos para receber você com exclusividade.</p>
-      <a class="btn btn-primary" href="https://wa.me/5562994188279?text=Ol%C3%A1%2C%20quero%20agendar%20um%20hor%C3%A1rio%20no%20Studio%20Carol%20Freitas%20Beauty." target="_blank" rel="noopener">Agendar Experiência Agora</a>
+      <p>Reserve o seu horário de cuidados especiais. Nosso espaço e nossa equipe estão prontos para receber você com
+        exclusividade.</p>
+      <a class="btn btn-primary"
+        href="https://wa.me/5562994188279?text=Ol%C3%A1%2C%20quero%20agendar%20um%20hor%C3%A1rio%20no%20Studio%20Carol%20Freitas%20Beauty."
+        target="_blank" rel="noopener">Agendar Experiência Agora</a>
     </div>
   </section>
 
@@ -2072,36 +2245,43 @@
     <div class="container">
       <div class="loc-grid">
         <div class="loc-info-card reveal-left">
-          <div class="loc-facade-wrapper" style="margin-bottom: 2.5rem; border-radius: 8px; overflow: hidden; border: 1px solid var(--border-gold); aspect-ratio: 16/9; box-shadow: var(--shadow-premium);">
-            <img src="Imagens/fachada.png" alt="Fachada do Studio Carol Freitas" style="width: 100%; height: 100%; object-fit: cover;">
+          <div class="loc-facade-wrapper"
+            style="margin-bottom: 2.5rem; border-radius: 8px; overflow: hidden; border: 1px solid var(--border-gold); aspect-ratio: 16/9; box-shadow: var(--shadow-premium);">
+            <img src="Imagens/fachada.png" alt="Fachada do Studio Carol Freitas"
+              style="width: 100%; height: 100%; object-fit: cover;">
           </div>
           <div>
-            <h2 class="section-title" style="margin-bottom: 2.5rem; font-size: 2.2rem;">Onde Cuidar <em>de Você</em></h2>
-            
+            <h2 class="section-title" style="margin-bottom: 2.5rem; font-size: 2.2rem;">Onde Cuidar <em>de Você</em>
+            </h2>
+
             <div class="loc-item">
               <h4>Endereço do Studio</h4>
               <p>Av. C-4, 365 — Quadra 23, Lote 16<br>Jardim América, Goiânia — GO, 74265-040</p>
             </div>
-            
+
             <div class="loc-item">
               <h4>Telefone & WhatsApp</h4>
               <p><a href="tel:+5562994188279">(62) 99418-8279</a></p>
             </div>
-            
+
             <div class="loc-item">
               <h4>Horários de Atendimento</h4>
               <p>Segunda a Sexta: 08h às 18h<br>Sábados: 08h às 16h<br>Domingos: Fechado</p>
             </div>
           </div>
-          
+
           <div class="loc-actions">
-            <a class="btn btn-dark" href="https://www.google.com/maps/dir/?api=1&destination=Av.+C-4,+365,+Jardim+America,+Goiania,+GO,+74265-040" target="_blank" rel="noopener">Traçar Rota no GPS</a>
-            <a class="btn btn-outline" style="border-color: rgba(18, 14, 10, 0.2); color: var(--espresso);" href="tel:+5562994188279">Ligar para o Studio</a>
+            <a class="btn btn-dark"
+              href="https://www.google.com/maps/dir/?api=1&destination=Av.+C-4,+365,+Jardim+America,+Goiania,+GO,+74265-040"
+              target="_blank" rel="noopener">Traçar Rota no GPS</a>
+            <a class="btn btn-outline" style="border-color: rgba(18, 14, 10, 0.2); color: var(--espresso);"
+              href="tel:+5562994188279">Ligar para o Studio</a>
           </div>
         </div>
-        
+
         <div class="map-frame-box reveal-right">
-          <iframe src="https://maps.google.com/maps?q=Av.+C-4,+365,+Jardim+America,+Goiania,+GO,+74265-040&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://maps.google.com/maps?q=Av.+C-4,+365,+Jardim+America,+Goiania,+GO,+74265-040&output=embed"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
@@ -2119,9 +2299,10 @@
               <span class="brand-subtitle">Beauty Studio</span>
             </div>
           </a>
-          <p class="footer-brand-text">Estética avançada, beleza e saúde em um ambiente sofisticado projetado exclusivamente para você no Jardim América, Goiânia.</p>
+          <p class="footer-brand-text">Estética avançada, beleza e saúde em um ambiente sofisticado projetado
+            exclusivamente para você no Jardim América, Goiânia.</p>
         </div>
-        
+
         <div>
           <h5>Navegação</h5>
           <ul class="footer-links">
@@ -2133,17 +2314,19 @@
             <li><a href="#localizacao">Endereço e Contato</a></li>
           </ul>
         </div>
-        
+
         <div>
           <h5>Redes e Fale Conosco</h5>
           <ul class="footer-links">
             <li><a href="tel:+5562994188279">Ligar: (62) 99418-8279</a></li>
-            <li><a href="https://instagram.com/carolfreitasbeautystudio" target="_blank" rel="noopener">Instagram: @carolfreitasbeautystudio</a></li>
-            <li><a href="https://wa.me/5562994188279" target="_blank" rel="noopener">WhatsApp: Agende seu Horário</a></li>
+            <li><a href="https://instagram.com/carolfreitasbeautystudio" target="_blank" rel="noopener">Instagram:
+                @carolfreitasbeautystudio</a></li>
+            <li><a href="https://wa.me/5562994188279" target="_blank" rel="noopener">WhatsApp: Agende seu Horário</a>
+            </li>
           </ul>
         </div>
       </div>
-      
+
       <div class="footer-bottom">
         <span>© 2026 Carol Freitas Beauty Studio. Todos os direitos reservados.</span>
         <span>Estética Avançada, Cabelo, Unhas & Podologia em Goiânia, GO.</span>
@@ -2152,8 +2335,14 @@
   </footer>
 
   <!-- FLOATING WHATSAPP BUTTON -->
-  <a class="wa-float" href="https://wa.me/5562994188279?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20no%20Studio%20Carol%20Freitas%20Beauty." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.1-.5-.1-.2-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.5 1.1 2.7c.1.2 2 3 4.7 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.5-.3z" fill="#ffffff"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z" stroke="#ffffff" stroke-width="1.8"/></svg>
+  <a class="wa-float"
+    href="https://wa.me/5562994188279?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20no%20Studio%20Carol%20Freitas%20Beauty."
+    target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M19.001 4.908A9.817 9.817 0 0 0 11.992 2C6.534 2 2.085 6.448 2.08 11.908c0 1.748.458 3.55 1.321 4.956L2 22l5.251-1.378a9.837 9.837 0 0 0 4.732 1.207h.005c5.454 0 9.901-4.449 9.907-9.908a9.82 9.82 0 0 0-2.894-7.013zM11.992 20.15a8.193 8.193 0 0 1-4.185-1.155l-.3-.179-3.11.815.83-3.032-.196-.312a8.198 8.198 0 0 1-1.258-4.38c.003-4.519 3.682-8.198 8.203-8.198a8.17 8.17 0 0 1 5.793 2.403 8.174 8.174 0 0 1 2.4 5.8c-.004 4.52-3.683 8.199-8.207 8.199zm4.498-6.143c-.246-.123-1.455-.717-1.68-.8a.294.294 0 0 0-.21-.044c-.06.015-.12.046-.22.18-.328.406-.445.548-.562.678-.117.13-.234.146-.48.023a6.082 6.082 0 0 1-1.782-1.1c-.55-.49-1.226-1.127-1.428-1.478-.117-.2-.013-.308.11-.433.093-.094.22-.256.328-.384.053-.06.09-.13.12-.19.06-.13.03-.24-.015-.33-.045-.09-.41-1.002-.562-1.373-.146-.35-.293-.306-.403-.312-.103-.005-.221-.005-.338-.005a.65.65 0 0 0-.469.219c-.164.18-.625.612-.625 1.493s.642 1.73 1.733 2.879c.107.14 2.1 3.208 5.09 4.498.712.307 1.267.49 1.7.63.715.227 1.365.195 1.88.117.573-.086 1.455-.595 1.66-1.171.205-.575.205-1.069.144-1.171-.061-.102-.22-.164-.467-.287z"
+        fill="#ffffff" />
+    </svg>
   </a>
 
   <!-- INTERACTION JAVASCRIPT -->
@@ -2171,7 +2360,7 @@
     // MOBILE BURGER MENU TOGGLE
     const burgerToggle = document.getElementById('burgerToggle');
     const mobileMenu = document.getElementById('mobileMenu');
-    
+
     burgerToggle.addEventListener('click', () => {
       toggleMobileMenu();
     });
@@ -2179,7 +2368,7 @@
     function toggleMobileMenu() {
       burgerToggle.classList.toggle('open');
       mobileMenu.classList.toggle('active');
-      
+
       // Prevent scrolling when menu is active
       if (mobileMenu.classList.contains('active')) {
         document.body.style.overflow = 'hidden';
@@ -2216,18 +2405,18 @@
           const targetNum = parseInt(el.dataset.count, 10);
           let currentNum = 0;
           const increment = Math.max(1, Math.ceil(targetNum / 50));
-          
+
           const counterInterval = setInterval(() => {
             currentNum += increment;
             if (currentNum >= targetNum) {
               currentNum = targetNum;
               clearInterval(counterInterval);
             }
-            
+
             // Format numbering with local formatting
             el.textContent = currentNum.toLocaleString('pt-BR') + (targetNum >= 100 ? '+' : '');
           }, 30);
-          
+
           counterObserver.unobserve(el);
         }
       });
@@ -2262,16 +2451,16 @@
     faqItems.forEach(item => {
       const trigger = item.querySelector('.faq-trigger');
       const content = item.querySelector('.faq-content');
-      
+
       trigger.addEventListener('click', () => {
         const isActive = item.classList.contains('active');
-        
+
         // Collapse all items first
         faqItems.forEach(otherItem => {
           otherItem.classList.remove('active');
           otherItem.querySelector('.faq-content').style.maxHeight = null;
         });
-        
+
         // If the clicked item was not active, expand it
         if (!isActive) {
           item.classList.add('active');
@@ -2281,4 +2470,5 @@
     });
   </script>
 </body>
+
 </html>
