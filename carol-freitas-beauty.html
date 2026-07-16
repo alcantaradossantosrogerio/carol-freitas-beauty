@@ -1641,6 +1641,9 @@
     }
 
     @media (max-width: 768px) {
+      .container {
+        padding: 0 1.5rem;
+      }
 
       .nav-links,
       .nav-actions .nav-cta-btn {
@@ -1651,31 +1654,8 @@
         display: block;
       }
 
-      .services-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-      }
-
-      .media-showcase-container,
-      .vip-gallery {
-        grid-template-columns: 1fr;
-        max-width: 400px;
-        margin: 0 auto;
-      }
-
       .about-img-frame {
         width: 85%;
-      }
-
-      .about-facade-card {
-        bottom: -25px;
-        left: -10px;
-        width: 45%;
-      }
-
-      .stats-grid {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
       }
 
       .testi-grid {
@@ -1696,6 +1676,142 @@
         flex-direction: column;
         text-align: center;
         gap: 1rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 0 1.25rem;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+      }
+
+      .service-card {
+        padding: 1.8rem 1rem;
+        border-radius: 8px;
+      }
+
+      .service-card-title {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .service-card-desc {
+        font-size: 0.8rem;
+        line-height: 1.4;
+        margin-bottom: 1rem;
+      }
+
+      .service-icon-wrapper {
+        width: 44px;
+        height: 44px;
+        margin-bottom: 1rem;
+      }
+
+      .media-showcase-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.8rem;
+      }
+
+      .video-overlay-info {
+        padding: 0.8rem;
+      }
+
+      .video-overlay-info h4 {
+        font-size: 1.15rem;
+      }
+
+      .video-overlay-info p {
+        font-size: 0.65rem;
+      }
+
+      .vip-gallery {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.8rem;
+      }
+
+      .vip-card {
+        padding: 6px;
+        border-radius: 8px;
+      }
+
+      .vip-card:nth-child(2) {
+        transform: translateY(12px);
+      }
+
+      .vip-card:nth-child(2):hover {
+        transform: translateY(6px) rotate(-1deg);
+      }
+
+      .vip-img-box {
+        border-radius: 6px;
+        margin-bottom: 0.6rem;
+      }
+
+      .vip-name {
+        font-size: 1.05rem;
+      }
+
+      .vip-tag {
+        font-size: 0.65rem;
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.6rem;
+      }
+
+      .stat-num {
+        font-size: 2rem;
+      }
+
+      .stat-label {
+        font-size: 0.58rem;
+        letter-spacing: 0.05em;
+      }
+
+      .faq-trigger {
+        padding: 1.2rem 1.2rem;
+        font-size: 0.95rem;
+      }
+
+      .faq-content-inner {
+        padding: 0 1.2rem 1.2rem;
+        font-size: 0.88rem;
+      }
+
+      .map-frame-box,
+      .map-frame-box iframe {
+        min-height: 320px;
+      }
+
+      .loc-info-card {
+        padding: 2.2rem 1.2rem;
+      }
+
+      .loc-actions {
+        flex-direction: column;
+        gap: 0.8rem;
+        margin-top: 2rem;
+      }
+
+      .loc-actions .btn {
+        width: 100%;
+      }
+
+      .wa-float {
+        width: 50px;
+        height: 50px;
+        bottom: 1.5rem;
+        right: 1.5rem;
+      }
+
+      .wa-float svg {
+        width: 26px;
+        height: 26px;
       }
     }
 
